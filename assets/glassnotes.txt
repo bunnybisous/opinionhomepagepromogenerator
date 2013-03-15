@@ -1,0 +1,12 @@
+Jeremy Zilar:
+	Do you know what the endpoint is for Glass to return a list of all stories from a section?
+Lacy Garrison:
+	it can do that?!
+Jeremy Zilar:
+	Save this: http://glass-output.prd.use1.nytimes.com/glass/outputmanager/v1/mobileSectionFront.json?topLevelAssetTypes[]=article&topLevelAssetTypes[]=blogpost&url[]=http://www.nytimes.com/pages/index.html
+Lacy Garrison:
+	thanks
+Jeremy Zilar:
+	Also, here are ALL the sections: http://cms-service.prd.nytimes.com/resources/v2/section.json?size=500
+	all 427
+	Luke asked that if we use that list, that we make a copy and not hit it directly.

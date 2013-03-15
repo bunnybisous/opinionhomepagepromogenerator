@@ -1,0 +1,172 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<title>Opinion Promo Maker</title>  
+	
+	<link href="http://css.nyt.com/css/0.1/screen/build/homepage/styles.css" type="text/css" rel="stylesheet" />
+
+	<link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" type="text/css" rel="stylesheet" />
+	<link href="./css/styles.css" type="text/css" rel="stylesheet" />
+	
+	<!--
+	<script src="http://code.jquery.com/jquery-1.8.2.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js" type="text/javascript"></script>
+	<script src="./js/lib/beautify-html.js" type="text/javascript"></script>
+	<script src="./js/lib/jquery.pubsub.js" type="text/javascript"></script>
+	<script src="./js/lib/jsprettify-all-latest.js" type="text/javascript"></script>
+-->
+	<script src="./js/OpinionPromoGenerator.js" type="text/javascript"></script>
+	  
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>  
+<body>  
+
+	<div class="_opinionPromoMaker col_6 col_last">
+
+		<header>
+			<h1>Opinion Homepage Promo Generator</h1>
+			<p>
+				<input type="submit" class="saveToFile" value="Save" />
+				<input type="submit" class="openFile" value="Open" />
+			</p>
+		</header>
+
+		<div id="dialogConfirmSave" title="Save to file" style="display: none;">
+    		<p>Please enter a filename.</p>
+    		<p class="error">Filenames may only include letters, numbers, dashes, and underscores. Please try again.</p>
+    		<p><input type="text" id="saveFileName" /></p>
+		</div>
+
+		<div id="dialogOpenFile" title="Open File">
+			<div class="fileList"></div>
+		</div>
+
+		<div class="col col_2">
+
+			<h2>Story Manager</h2>
+
+			<div id="StoriesManager" class="_storiesManager _connectedSortable">
+				<p>Reading Opinion feed. Please be patient.</p>
+			</div>
+
+			<div class="_search">
+				<h3>Search</h3>
+				<p>Search for additional stories. Enter the story url in the textfield below.</p>
+				<p>
+					<input type="text" id="articleUrl" class="_articleUrl" />	
+					<!--
+					<input type="text" id="articleUrl" class="_articleUrl" value="http://www.nytimes.com/2012/09/09/opinion/sunday/a-congress-for-the-many-or-the-few.html" />
+					-->
+				</p>
+				<p>
+					<input type="submit" class="addArticle scoop" value="Search Scoop">
+					<input type="submit" class="addArticle wordpress" value="Search WordPress">
+				</p>
+			</div>
+
+			<div class="_legend">
+				<h3>Legend</h3>
+
+				<div class="_storiesManager _connectedSortable">
+					<div class="_story _loaded">Data Loaded from Glass</div>
+					<div class="_story _loading">Data Partially Loaded from Skimmer</div>
+				</div>
+			</div>
+
+			<div id="Errors"></div>
+
+		</div>
+
+		<div class="col col_2">
+
+			<div id="LayoutManager" class="_layoutManager">
+
+				<h2>Layout Manager</h2>
+
+				<div id="RegionManager" class="_regionManager">
+
+					<div class="clearfix">
+
+						<div class="col col_2 col_last">
+							<div id="RegionTop" class="_region _connectedSortable"></div>
+						</div>
+						<div>
+							<div class="col col_1">
+								<div id="RegionLeft" class="_region _connectedSortable"></div>
+							</div>
+							<div class="col col_1 col_last">
+								<div id="RegionRight" class="_region _connectedSortable"></div>
+							</div>
+						</div>
+						<div class="col col_2 col_last">
+							<div id="RegionBottom" class="_region _connectedSortable"></div>
+						</div>
+
+					</div>
+
+					<div>
+						<p><input type="checkbox" id="Input_Divider" checked> Include divider?</p>
+					</div>
+
+				</div>
+
+				<h2>Elements</h2>
+
+				<div id="ElementsManager" class="_elements _connectedSortable"></div>
+
+				<input type="submit" class="addKicker" value="Add Kicker">
+
+			</div>
+
+			<div id="Edit" class="_edit">
+
+				<h2>Edit</h2>
+
+				<table cellpadding="0" cellspacing="0" border="0"></table>
+
+			</div>
+
+		</div>
+
+		<div class="col col_2 col_last">
+
+			<h2>Preview</h2>
+
+			<div id="preview">
+				<div id="home">
+				    <div id="shell">
+				        <div id="page" class="tabContent active">
+				            <div id="main">
+				                <div class="baseLayout wrap layout">
+				                    <div class="nav column">&nbsp;</div>
+				                    <div class="column last">
+				                        <div class="spanAB layout">
+				                            <div class="cColumn">
+												<div id="cColumnTopSpanRegion">
+												    <div class="columnGroup first">
+												        <div id="OpinionModule" class="opinionModule"></div>
+												    </div>
+												</div>
+
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+			    </div>
+			</div>
+
+			<h2>HTML</h2>
+
+			<textarea id="Html"></textarea>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>

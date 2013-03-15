@@ -1,0 +1,9 @@
+{
+  "name": "OpinionPromoGenerator",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib": "~0.4.0",
+    "grunt-regarde": "~0.1.1"
+  }
+}

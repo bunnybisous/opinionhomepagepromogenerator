@@ -1,0 +1,138 @@
+.col {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.col_last {
+  margin-right: 0px; }
+
+.col_1 {
+  width: 166px; }
+
+.col_2 {
+  width: 352px; }
+
+.col_3 {
+  width: 538px; }
+
+.col_4 {
+  width: 724px; }
+
+.col_5 {
+  width: 910px; }
+
+.col_6 {
+  width: 1096px; }
+
+#home #main,
+#page {
+  border: 0 !important; }
+
+#shell,
+#page,
+#main,
+#home .baseLayout, #home .baseLayoutBelowFold,
+#home .spanAB,
+#home .spanABBelowFold {
+  width: 100%; }
+
+#home .baseLayout .nav,
+#home .baseLayoutBelowFold .nav {
+  display: none; }
+
+#home .baseLayout,
+#home .spanAB {
+  background: none; }
+
+header {
+  margin-bottom: 40px; }
+
+h1, h2, h3 {
+  margin-bottom: 20px; }
+
+.error {
+  display: none; }
+
+._opinionPromoMaker {
+  margin: 30px auto; }
+
+._elements, ._storiesManager, ._region {
+  padding: 20px;
+  background-color: #efefef;
+  border: 1px solid #666666; }
+
+._elements, ._storiesManager, ._layoutManager, #preview, ._regionManager, ._search, ._legend {
+  margin-bottom: 30px; }
+
+._element, ._story, ._elements, ._storiesManager, ._region {
+  border-radius: 3px; }
+
+._element, ._story {
+  font-size: 14px;
+  font-family: arial,helvetica,sans-serif;
+  padding: 4px 6px;
+  border: 1px solid transparent;
+  margin-bottom: 8px; }
+  ._element:last-child, ._story:last-child {
+    margin-bottom: 0px; }
+  ._element._loading, ._story._loading {
+    background-color: #eec0d5;
+    border-color: #ee006a; }
+  ._element._loaded, ._story._loaded {
+    background-color: #c0c8e9;
+    border-color: #002fed; }
+
+._story div {
+  display: inline-block; }
+._story .cutHeadline {
+  font-size: 18px;
+  cursor: pointer; }
+  ._story .cutHeadline:hover {
+    color: red; }
+
+._element {
+  background-color: #e8e4be;
+  border-color: #edd400; }
+
+._region ._story._loaded {
+  background-color: #bee8c4;
+  border-color: #00ed21; }
+
+._region ._element {
+  background-color: #bee8c4;
+  border-color: #00ed21; }
+
+._articleUrl {
+  width: 334px; }
+
+#Errors {
+  color: red; }
+
+#Html {
+  width: 352px;
+  height: 300px; }
+
+#Edit {
+  display: none; }
+  #Edit table {
+    width: 352px;
+    border-collapse: collapse; }
+    #Edit table tr {
+      border: 1px solid #666666;
+      background: #fdfdfd; }
+      #Edit table tr td {
+        padding: 15px 5px;
+        margin: 0;
+        vertical-align: top; }
+        #Edit table tr td p {
+          margin-bottom: 2px; }
+        #Edit table tr td:last-child {
+          width: 94%; }
+        #Edit table tr td input[type="text"],
+        #Edit table tr td textarea {
+          width: 96%; }
+      #Edit table tr:nth-child(2n+1) {
+        background: #f2f2f2; }
+      #Edit table tr:first-child, #Edit table tr:last-child {
+        border: 0;
+        background: transparent; }

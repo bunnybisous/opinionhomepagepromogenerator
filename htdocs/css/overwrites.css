@@ -1,0 +1,19 @@
+#home #main,
+#page {
+  border: 0 !important; }
+
+#shell,
+#page,
+#main,
+#home .baseLayout, #home .baseLayoutBelowFold,
+#home .spanAB,
+#home .spanABBelowFold {
+  width: 100%; }
+
+#home .baseLayout .nav,
+#home .baseLayoutBelowFold .nav {
+  display: none; }
+
+#home .baseLayout,
+#home .spanAB {
+  background: none; }
