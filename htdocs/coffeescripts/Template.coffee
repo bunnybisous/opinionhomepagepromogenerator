@@ -74,10 +74,8 @@ class Template
 		for thumb in thumbs
 			if thumb.getDisplay( )
 				src = thumb.getValue( )
-				html += """<div class="runaroundRight">"""
-				html += """<div class="thumbnail">"""
+				html += """<div class="thumbnail runaroundRight">"""
 				html += """<a href="#{@.url}"><img src="#{src}" #{size} /></a>"""
-				html += """</div>"""
 				html += """</div>"""
 		return html
 

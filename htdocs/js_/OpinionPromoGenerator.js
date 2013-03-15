@@ -908,10 +908,8 @@ Template = (function() {
       thumb = thumbs[_i];
       if (thumb.getDisplay()) {
         src = thumb.getValue();
-        html += "<div class=\"runaroundRight\">";
-        html += "<div class=\"thumbnail\">";
+        html += "<div class=\"thumbnail runaroundRight\">";
         html += "<a href=\"" + this.url + "\"><img src=\"" + src + "\" " + size + " /></a>";
-        html += "</div>";
         html += "</div>";
       }
     }
