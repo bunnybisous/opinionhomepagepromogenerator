@@ -1,6 +1,6 @@
 The OpinionHomepagePromoGenerator is a client-side application that generates HTML for the Opinion promo on the homepage.
 
-This application was created using the grunt-nyt-template. [Click here for information about setting up grunt locally on your machine.](http://gitlab.newsdev.net/lggarrison/grunt-nyt-template/tree/master)
+This application was created using the grunt-nyt-template. [Click here for information about setting up grunt locally on your machine.](http://gitlab.newsdev.net/design/grunt-nyt-template/tree/master)
 
 Use the following command to watch the htdocs directory and compile the CoffeeScript and Sass files automatically.
 
